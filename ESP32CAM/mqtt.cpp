@@ -2,7 +2,7 @@
 
 
 int last_capture_time = 0;
-int delay_between_captures = 200;   // send images every 200ms
+int delay_between_captures = 100;   // send images every 100ms
 static int sendNum = 0;
 
 MqttManager::MqttManager(): client(espClient)
@@ -158,6 +158,8 @@ void MqttManager::loop()
     publish("text", sendNumBuf);
     sendNum += 1;
 
+    delay(70);
+    
     // Release camera image resources
     esp_camera_fb_return(fb);
   }
