@@ -157,8 +157,6 @@ void MqttManager::loop()
     sprintf(sendNumBuf, "%d", sendNum);
     publish("text", sendNumBuf);
     sendNum += 1;
-
-    delay(70);
     
     // Release camera image resources
     esp_camera_fb_return(fb);
