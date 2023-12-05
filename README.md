@@ -29,9 +29,9 @@
     | mqtt_username | 认证的用户名 |
     | mqtt_password | 认证的密码 |
     | mqtt_port | MQTT端口 |
-    | ca_cert | CA证书，需要下载后用记事本打开并黏贴到代码中 |
+    | ca_cert | CA证书，需要下载后用记事本打开并黏贴到代码中（kotlin的话需要将证书文件黏贴到res/raw/目录下） |
    
-4. 通过**Android Studio**打开testMqtt，我们也需要在**MainActivity.kt**修改其中MQTT云服务器的一些参数再部署到手机上。
+4. 通过**Android Studio**打开testMqtt，我们也需要在**MainActivity.kt**修改其中MQTT云服务器的对应参数再部署到手机上。
 
 
 ## 注意事项
